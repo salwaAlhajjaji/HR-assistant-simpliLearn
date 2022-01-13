@@ -1,0 +1,24 @@
+<div class="container ">
+    <div class="row col-10 rounded-div mx-auto my-5" *ngIf="result >= 60">
+      <div class="row">
+        <div class="p-5 mx-auto">
+          <img src="../../../assets/images/pass.png" style="width: 40%;" />
+        </div>
+        <div class="col-8 p-1 rounded-title mx-auto">
+            <h2>Congrats your Assessment Score was {{result}}%</h2>
+            <h4>You Pass 👏👏</h4>
+        </div>
+      </div>
+    </div>
+    <div class="row col-10 rounded-div mx-auto my-5" *ngIf="result < 60 && 0 < result">
+        <div class="row">
+          <div class="p-5 mx-auto">
+            <img src="../../../assets/images/fail.png" style="width: 40%;" />
+          </div>
+          <div class="col-8 p-1 rounded-title mx-auto">
+            <h2>Sorry your Assessment Score was {{result}}%</h2>
+            <h4>Unfortunately You Fail, Good Luck 🥺💔 </h4>
+          </div>
+        </div>
+      </div>
+</div>

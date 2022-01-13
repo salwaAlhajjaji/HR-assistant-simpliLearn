@@ -1,0 +1,93 @@
+/* You can add global styles to this file, and also import other style files */
+.bg-blue{
+    background-color: #0a4275;
+    color: #fff;
+}
+.bg-dblue{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+.btn-blue{
+    background-color: #0a4275;
+    color: #fff;
+    font-size: 18px;  
+}
+.btn-blue:hover{
+    /* background-color: #fff; */
+    /* color: #0a4275; */
+    /* border: 1.4px solid #0a4275; */
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.rounded-div{
+    display: block;
+    background: #fffefed2;
+    box-shadow: 0 3px 48px 0 rgba(0, 0, 0, 0.10);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    position: relative;
+    margin-bottom: 30px;
+  }
+
+.rounded-div:hover .icon {
+    background-color: #0a4275;
+  }  
+  .rounded-div .icon {
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    margin: auto;
+    position: relative;
+    margin-bottom: 30px;
+    background: #8261ee;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+  }
+  
+  .rounded-div .icon i {
+    font-size: 18px;
+    color: #fff;
+  }
+  
+  .rounded-div .rounded-title {
+    font-weight: 500;
+    font-size: 19px;
+    color: #1e1e1e;
+    letter-spacing: 0.7px;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .rounded-div p {
+    font-weight: 400;
+    font-size: 13px;
+    color: #777;
+    letter-spacing: 0.5px;
+    line-height: 25px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .rounded-div a {
+    float: right;
+    position: relative;
+    z-index: 2;
+  }
+  

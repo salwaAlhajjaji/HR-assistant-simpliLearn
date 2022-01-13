@@ -1,0 +1,25 @@
+<div class="container ">
+    <div class="row col-10 rounded-div mx-auto my-5">
+      <div class="row" *ngFor="let question of allQuestions">
+        <!-- question -->
+        <div class="rounded-title mx-auto">
+          Q{{question.qId}}: {{question.qTxt}}
+      </div>
+       <!-- choices -->
+      <div class="col-10 pb-5  mx-auto " >
+        <div class="row" *ngFor="let option of question.options">
+        <div class="col-10 mx-auto" >
+          <!-- "qId" to get one radio check gor each question, "optionVal" to use it in comapring with right answer, "optionTxt" to display the option-->
+          <input type="radio" (change)="radioChange($event, question.qId)" name ="{{question.qId}}" value="{{option.optionVal}}"><span>&nbsp;{{option.optionTxt}}</span><br>
+        </div>
+        </div>
+      </div>
+      </div>
+      <div class="row d-flex justify-content-end my-4 ">
+          <div class="col-2 " >
+            <button type="button" [disabled]="!answerAllQ" (click)="submitAssessment()" class="btn btn-blue" >Send&nbsp;<img src="../../../assets/images/send.png" width=25% /></button>
+          </div>
+      </div>
+    </div>
+
+</div>
